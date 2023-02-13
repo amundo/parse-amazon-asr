@@ -208,9 +208,26 @@ This `JSON` structure is probably intended for more modeling (there are confiden
 
 The converter, `amazon-asr-to-text.js`, is a module which can be imported either into a web interface or used on the command line.  It’s nothing fancy and could stand some iteration, but it gets the job done. 
 
-I also have a [deno](https://deno.land) script which runs on the command line like this:
+## Running from the command line
+
+I usually use this module from the command line, using a [deno](https://deno.land) script.
 
 ```
-$ deno run amazon-asr-to-docling [input file name] [output-file-name]?
+$ deno run --allow-read --allow-write parse-amazon.js [input file name] --output [output-file-name]?
 ```
 
+This will take a file like `sample-amazon-asr.json` and produce `sample-amazon-text.json`.
+
+## Installing 
+
+`deno` has a useful `install` subcommand that will install the script in your `~/.deno/bin` directory, making the script usable from anywhere on your system as a more simple command with fewer flags. You can install it like this:
+
+```
+$ deno install --allow-read --allow-write parse-amazon.js
+```
+
+Now you can run the command like this:
+
+```shell
+$ deno parse-amazon <input-file> --output <output-file>
+```
