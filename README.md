@@ -45,7 +45,7 @@ Wait.
 When it's done, scroll down to `Transcription preview > Download transcript`, which will download the recognition data as a `JSON` file. I saved mine as `sample-asr-output.json`, which looks like this:
 
 
-```js
+```json
 {
   "jobName": "test-amazon-asr",
   "accountId": "785222139731",
