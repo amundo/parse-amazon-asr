@@ -1,0 +1,155 @@
+{
+  "jobName": "test-amazon-asr",
+  "accountId": "785222139731",
+  "results": {
+    "transcripts": [
+      {
+        "transcript": "This is a test of the amazon speech to text recognition thingy."
+      }
+    ],
+    "items": [
+      {
+        "start_time": "0.55",
+        "end_time": "0.86",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "This"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "0.86",
+        "end_time": "0.99",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "is"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "0.99",
+        "end_time": "1.08",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "a"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "1.08",
+        "end_time": "1.49",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "test"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "1.49",
+        "end_time": "1.62",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "of"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "1.62",
+        "end_time": "1.92",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "the"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "1.93",
+        "end_time": "2.57",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "amazon"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "2.58",
+        "end_time": "3.06",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "speech"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "3.06",
+        "end_time": "3.19",
+        "alternatives": [
+          {
+            "confidence": "0.9857",
+            "content": "to"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "3.19",
+        "end_time": "3.51",
+        "alternatives": [
+          {
+            "confidence": "0.9982",
+            "content": "text"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "3.51",
+        "end_time": "4.22",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "recognition"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "4.23",
+        "end_time": "4.69",
+        "alternatives": [
+          {
+            "confidence": "0.3726",
+            "content": "thingy"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": "0.0",
+            "content": "."
+          }
+        ],
+        "type": "punctuation"
+      }
+    ]
+  },
+  "status": "COMPLETED"
+}

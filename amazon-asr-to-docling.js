@@ -1,4 +1,4 @@
-export let amazonAsrToText = ({fileName, asr}) => {
+export let amazonAsrToDocling = ({fileName, asr}) => {
   let sentences = asr.results.items.reduce((sentences, token) => {
     if(token.type == 'punctuation'){
       let sentence = sentences[sentences.length-1]
@@ -27,8 +27,8 @@ export let amazonAsrToText = ({fileName, asr}) => {
       let content = ' ' + token.alternatives[0].content
       sentence.transcription += content
 
-      let end = token.end_time
-      let start = token.start_time
+      let end = parseFloat(token.end_time)
+      let start = parseFloat(token.start_time)
 
       if(sentence.words.length === 0){
         sentence.metadata.links[0].start = start
@@ -77,7 +77,7 @@ export let amazonAsrToText = ({fileName, asr}) => {
       links: [
          {
            type: "audio",
-           src: fileName.replace("-asr.json", ".wav")
+           file: fileName.replace("-asr.json", ".mp3")
          }
        ]
     }, 

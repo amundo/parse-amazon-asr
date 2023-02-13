@@ -1,0 +1,211 @@
+{
+  "metadata": {
+    "title": "Converted from Amazon ASR",
+    "links": [
+      {
+        "type": "audio",
+        "file": "sample-amazon.mp3"
+      }
+    ]
+  },
+  "sentences": [
+    {
+      "transcription": "This is a test of the amazon speech to text recognition thingy.",
+      "translation": "",
+      "words": [
+        {
+          "form": "This",
+          "gloss": "",
+          "metadata": {
+            "links": [
+              {
+                "type": "timestamp",
+                "start": 0.55,
+                "end": 0.86,
+                "speaker": null
+              }
+            ]
+          }
+        },
+        {
+          "form": "is",
+          "gloss": "",
+          "metadata": {
+            "links": [
+              {
+                "type": "timestamp",
+                "start": 0.86,
+                "end": 0.99,
+                "speaker": null
+              }
+            ]
+          }
+        },
+        {
+          "form": "a",
+          "gloss": "",
+          "metadata": {
+            "links": [
+              {
+                "type": "timestamp",
+                "start": 0.99,
+                "end": 1.08,
+                "speaker": null
+              }
+            ]
+          }
+        },
+        {
+          "form": "test",
+          "gloss": "",
+          "metadata": {
+            "links": [
+              {
+                "type": "timestamp",
+                "start": 1.08,
+                "end": 1.49,
+                "speaker": null
+              }
+            ]
+          }
+        },
+        {
+          "form": "of",
+          "gloss": "",
+          "metadata": {
+            "links": [
+              {
+                "type": "timestamp",
+                "start": 1.49,
+                "end": 1.62,
+                "speaker": null
+              }
+            ]
+          }
+        },
+        {
+          "form": "the",
+          "gloss": "",
+          "metadata": {
+            "links": [
+              {
+                "type": "timestamp",
+                "start": 1.62,
+                "end": 1.92,
+                "speaker": null
+              }
+            ]
+          }
+        },
+        {
+          "form": "amazon",
+          "gloss": "",
+          "metadata": {
+            "links": [
+              {
+                "type": "timestamp",
+                "start": 1.93,
+                "end": 2.57,
+                "speaker": null
+              }
+            ]
+          }
+        },
+        {
+          "form": "speech",
+          "gloss": "",
+          "metadata": {
+            "links": [
+              {
+                "type": "timestamp",
+                "start": 2.58,
+                "end": 3.06,
+                "speaker": null
+              }
+            ]
+          }
+        },
+        {
+          "form": "to",
+          "gloss": "",
+          "metadata": {
+            "links": [
+              {
+                "type": "timestamp",
+                "start": 3.06,
+                "end": 3.19,
+                "speaker": null
+              }
+            ]
+          }
+        },
+        {
+          "form": "text",
+          "gloss": "",
+          "metadata": {
+            "links": [
+              {
+                "type": "timestamp",
+                "start": 3.19,
+                "end": 3.51,
+                "speaker": null
+              }
+            ]
+          }
+        },
+        {
+          "form": "recognition",
+          "gloss": "",
+          "metadata": {
+            "links": [
+              {
+                "type": "timestamp",
+                "start": 3.51,
+                "end": 4.22,
+                "speaker": null
+              }
+            ]
+          }
+        },
+        {
+          "form": "thingy",
+          "gloss": "",
+          "metadata": {
+            "links": [
+              {
+                "type": "timestamp",
+                "start": 4.23,
+                "end": 4.69,
+                "speaker": null
+              }
+            ]
+          }
+        }
+      ],
+      "metadata": {
+        "links": [
+          {
+            "type": "timestamp",
+            "start": 0.55,
+            "end": 0,
+            "speaker": null
+          }
+        ]
+      }
+    },
+    {
+      "transcription": "",
+      "translation": "",
+      "words": [],
+      "metadata": {
+        "links": [
+          {
+            "type": "timestamp",
+            "start": null,
+            "speaker": null
+          }
+        ]
+      }
+    }
+  ]
+}

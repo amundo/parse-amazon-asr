@@ -1,21 +1,58 @@
-import {amazonAsrToText}  from './amazon-asr-to-text.js'
+import { amazonAsrToDocling } from "./amazon-asr-to-docling.js"
+import { parse } from "https://deno.land/std@0.119.0/flags/mod.ts"
 
+const VERSION = "0.1"
 
-// get the file name
-let asrFileName = Deno.args[0]
+const flags = parse(Deno.args, {
+  boolean: ["help", "version"],
+  default: { color: true },
+})
 
-// open the file
-let json = await Deno.readTextFile(asrFileName)
+let inputFileName = flags._[0]
 
-// parse the json
-let asr = JSON.parse(json)
+let showHelp = () => {
+  console.log(`
+  
+    $ amazon-asr-to-docling [input Amazon asr JSON] --output [output-file-name]?
+  
+  If no option flag is used, the input filename will replace -asr.json with -text.json.
 
-let textFileName = asrFileName.replace('-asr.json', '-text.json')
+  To install: 
 
-let text = amazonAsrToText({
-  fileName: asrFileName, 
-  asr})
+    $ deno install --allow-read --allow-write parse-amazon-asr.js
 
-let textJSON = JSON.stringify(text,null,2)
+  `)
+  Deno.exit()
+}
 
-Deno.writeTextFileSync(textFileName, textJSON)
+if(flags.help || !inputFileName){
+  showHelp()
+}
+
+if (flags.version) {
+  console.log(`${VERSION}`)
+  Deno.exit()
+}
+
+let outputFileName
+let asr 
+
+if (inputFileName) {
+  let json = await Deno.readTextFile(inputFileName)
+  asr = JSON.parse(json)
+}
+
+if (!flags.output) {
+  outputFileName = inputFileName.replace("-asr.json", "-text.json")
+} else {
+  outputFileName = flags.output
+}
+
+let text = amazonAsrToDocling({
+  fileName: inputFileName,
+  asr
+})
+
+let textJSON = JSON.stringify(text, null, 2)
+
+Deno.writeTextFileSync(outputFileName, textJSON)
