@@ -18,8 +18,6 @@ click through until upload happens.
 
 click the “Copy path” button (you want the `s3://` url, not the `https://` one
 
-continue below.
-
 
 ### Upload audio to a bucket
 
