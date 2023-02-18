@@ -1,5 +1,7 @@
 # Use Amazon Automatic Speech Recognition to create a JSON file
 
+note: this script converts azon ASR to a specific JSON format that probably isn't of general interest.
+
 
 Amazon.com offers free speech to text recognition. The output is a very detailed but overwhelmingly verbose `JSON` file with contents that look like this:
 
